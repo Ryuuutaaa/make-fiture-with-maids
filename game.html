@@ -8,7 +8,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>Document</title>
+
+    <link rel="icon" href="asset/img/logo.png" />
+    <title>Game Page</title>
   </head>
   <body>
     <!-- Navbar -->
@@ -32,11 +34,40 @@
           </li>
         </ul>
       </div>
+      <div class="btn-main">
+        <div class="btn-gambar">
+          <a href="#gambar">
+            <button class="btn">
+              🎮 Tebak Gambar
+              <i class="fa-solid fa-arrow-right arrow"></i>
+            </button>
+          </a>
+        </div>
+        <div class="btn-suit">
+          <a href="">
+            <button class="btn">
+              🎮 suit <i class="fa-solid fa-arrow-right arrow"></i>
+            </button>
+          </a>
+        </div>
+      </div>
     </section>
     <!-- navbar end  -->
 
     <!-- main games -->
-    <section class="main"></section>
+    <section class="main" id="gambar">
+      <div class="container">
+        <div class="img">
+          <img id="gambarTebak" src="asset/img/" alt="Tebak Gambar" />
+        </div>
+        <div class="jawaban">
+          <input type="text" id="tebakan" placeholder="Kakak siapa niii???" />
+          <button onclick="cekTebakan()">Jawaban</button>
+          <p id="kesempatan">Kesempatan: 5</p>
+          <p id="hasil"></p>
+        </div>
+      </div>
+    </section>
     <!-- end main games -->
 
     <!-- script -->

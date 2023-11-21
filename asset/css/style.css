@@ -135,8 +135,12 @@ video {
 .container .member .profile:hover {
   transform: scale(1.2);
   background-color: #ef5e8d;
-  color: white;
+
   cursor: pointer;
+}
+
+.container .member .profile:hover a {
+  color: white;
 }
 /* end members */
 
